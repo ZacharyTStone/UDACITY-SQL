@@ -100,3 +100,43 @@ DROP TABLE is a statement that removes a table in a database.
 Entity-relationship diagram (ERD) A common way to view data in a database.
 FROM specifies from which table(s) you want to select the columns. Notice the columns need to exist in this table.
 SELECT allows you to read data and display it. This is called a query and it specifies from which table(s) you want to select the columns.
+
+Database Normalization
+When creating a database, it is really important to think about how data will be stored. This is known as normalization, and it is a huge part of most SQL classes. If you are in charge of setting up a new database, it is important to have a thorough understanding of database normalization.
+
+There are essentially three ideas that are aimed at database normalization:
+
+Are the tables storing logical groupings of the data?
+Can I make changes in a single location, rather than in many tables for the same information?
+Can I access and manipulate data quickly and efficiently?
+This is discussed in detail here.
+
+However, most analysts are working with a database that was already set up with the necessary properties in place. As analysts of data, you don't really need to think too much about data normalization. You just need to be able to pull the data from the database, so you can start making insights. This will be our focus in this lesson.
+
+7 of 21 concepts completed
+Keys
+Primary Key (PK)
+A primary key is a unique column in a particular table. This is the first column in each of our tables. Here, those columns are all called id, but that doesn't necessarily have to be the name. It is common that the primary key is the first column in our tables in most databases.
+
+Foreign Key (FK)
+A foreign key is a column in one table that is a primary key in a different table.
+
+Create Joins Using Primary - Foreign Keys
+Evaluate Various Types of Joins
+Integrate Aliasing and Filters with Joins
+Recap
+You learned a key element for JOINing tables in a database has to do with primary and foreign keys. Choosing the set up of data in our database is very important, but not usually the job of a data analyst. This process is known as Database Normalization.
+
+You learned how to combine data from multiple tables using JOINs. The three JOIN statements you are most likely to use are: JOIN, LEFT JOIN, RIGHT JOIN.
+
+There are a few more advanced JOINs that we did not cover here, and they are used in very specific use cases. UNION and UNION ALL, CROSS JOIN, and the tricky SELF JOIN. These are more advanced than this course will cover, but it is useful to be aware that they exist, as they are useful in special cases.
+
+You also learned that you can alias tables and columns using AS or not using it. This allows you to be more efficient in the number of characters you need to write, while at the same time you can assure that your column headings are informative of the data in your table.
+
+KeyTerm Definition
+Foreign Key (FK) is a column in one table that is a primary key in a different table
+JOIN is an INNER JOIN that only pulls data that exists in both tables.
+LEFT JOIN is a JOIN that pulls all the data that exists in both tables, as well as all of the rows from the table in the FROM even if they do not exist in the JOIN statement.
+Partition by A subclause of the OVER clause. Similar to GROUP BY.
+Primary Key (PK) is a unique column in a particular table
+RIGHT JOIN is a JOIN pulls all the data that exists in both tables, as well as all of the rows from the table in the JOIN even if they do not exist in the FROM statement.
